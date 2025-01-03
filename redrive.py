@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import argparse
 
 parser = argparse.ArgumentParser(
-                    prog='Reversedrive',
+                    prog='Redrive',
                     description='Generates a direct download link for Google Drive.')
 
 parser.add_argument('id', help='file ID')
