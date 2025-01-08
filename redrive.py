@@ -38,7 +38,7 @@ def get_uuid(url):
     soup = BeautifulSoup(response.text, 'html.parser')
 
     warning_text = soup.find('p', class_='uc-warning-caption')
-    if warning_text and "Google Drive has detected issues with your download" in warning_text.text:
+    if warning_text:
         uuid_input = soup.find('input', {'name': 'uuid'})
         if uuid_input:
             uuid = uuid_input['value']
